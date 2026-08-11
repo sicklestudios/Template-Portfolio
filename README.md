@@ -36,4 +36,4 @@ Each section (Hero, About, Projects, SkillsMarquee, Experience, Contact, Footer,
 npm run build
 npm start
 ```
-Or deploy directly to Vercel.
+Or deploy directly to Netlify.
