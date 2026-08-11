@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nextgen Dev Portfolio — Template
 
-## Getting Started
+A dark, motion-heavy Next.js portfolio template for software engineers. Built for resale — every piece of content lives in one file, and colors/fonts are theme tokens.
 
-First, run the development server:
+## Stack
+- Next.js 16 (App Router) + TypeScript
+- Tailwind CSS v4
+- Framer Motion (all animation)
+- Lenis (buttery smooth scroll)
+- Fully generated, seeded avatar + project cover art (SVG, no external images/licenses needed)
 
+## Quick start
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Customize (this is all a buyer needs to touch)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1. Content — `src/lib/config.ts`
+Everything text-based lives here: name, role, bio, social links, skills list, projects, work experience. Change the `avatarSeed` string to instantly generate a new unique avatar (or change any project's `seed` for new cover art).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. Colors & fonts — `src/app/globals.css`
+The `:root` block at the top has every color token (`--bg`, `--accent`, `--accent-2`, `--accent-3`, etc.) and the `--gradient`. Swap those hex values to reskin the whole site instantly. Fonts are wired in `src/app/layout.tsx` via `next/font/google` — swap `Space_Grotesk`/`Inter`/`JetBrains_Mono` for any Google Font.
 
-## Learn More
+### 3. Sections — `src/components/`
+Each section (Hero, About, Projects, SkillsMarquee, Experience, Contact, Footer, Nav) is an isolated component. Reorder, remove, or duplicate sections directly in `src/app/page.tsx`.
 
-To learn more about Next.js, take a look at the following resources:
+## Notes for resale
+- No real photos or third-party brand assets are used — the avatar and project art are procedurally generated SVGs, safe to redistribute.
+- All animations are CSS/Framer Motion based — no paid libraries.
+- Mobile responsive; cursor FX and marquee auto-disable on touch devices.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy
+```bash
+npm run build
+npm start
+```
+Or deploy directly to Vercel.

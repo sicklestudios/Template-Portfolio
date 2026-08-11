@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Nimbus",
+    "description": "A real-time collaborative whiteboard with CRDT-based sync, supporting 100+ concurrent editors with zero merge conflicts.",
+    "tags": ["Next.js", "WebSockets", "CRDT"],
+    "year": "2025",
+    "link": "#",
+    "seed": "nimbus-01"
+  },
+  {
+    "title": "Pulse Analytics",
+    "description": "A self-hosted product analytics platform built for privacy-first teams — event pipelines, dashboards, and alerting.",
+    "tags": ["TypeScript", "PostgreSQL", "Redis"],
+    "year": "2024",
+    "link": "#",
+    "seed": "pulse-02"
+  },
+  {
+    "title": "Fractal CLI",
+    "description": "A developer productivity CLI that scaffolds full-stack apps in seconds, with plugin support and live templates.",
+    "tags": ["Rust", "CLI", "DX Tooling"],
+    "year": "2024",
+    "link": "#",
+    "seed": "fractal-03"
+  },
+  {
+    "title": "Orbit Commerce",
+    "description": "A headless commerce engine powering checkout for a mid-size DTC brand, cut checkout latency by 63%.",
+    "tags": ["Node.js", "GraphQL", "Stripe"],
+    "year": "2023",
+    "link": "#",
+    "seed": "orbit-04"
+  },
+  {
+    "title": "Vantage",
+    "description": "A lightweight observability dashboard that unifies logs, traces, and metrics for small infra teams.",
+    "tags": ["Go", "ClickHouse", "React"],
+    "year": "2023",
+    "link": "#",
+    "seed": "vantage-05"
+  },
+  {
+    "title": "Loopstack",
+    "description": "An open-source workflow automation builder with a visual node editor and serverless execution engine.",
+    "tags": ["TypeScript", "AWS Lambda", "React Flow"],
+    "year": "2022",
+    "link": "#",
+    "seed": "loopstack-06"
+  }
+]
